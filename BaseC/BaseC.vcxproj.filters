@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ISAInheritance.cpp">
+    <ClCompile Include="FunctionVirtualOverride.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
