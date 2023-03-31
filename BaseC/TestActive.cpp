@@ -25,6 +25,13 @@ public:
         cout << this->name << endl;
         cout << this->birthday << endl;
     }
+    Person& operator=(const Person& ref)
+    {
+        delete[] name;
+        name = new char[strlen(ref.name) + 1];
+        strcpy(name, ref.name);
+        return *this;
+    }
     ~Person() {
         delete[] this->name;
         cout << "delete name" << endl;
@@ -42,6 +49,9 @@ int main()
 
     Person p3 = p2;
     p3.ShowPerson();
+
+    Person p4("°­°¨Âù", 20001201);
+    p4 = p1;
 
     return 0;
 }
